@@ -1,0 +1,8 @@
+language: python
+python:
+  - 3.6
+before_install:
+  - python --version
+  - pip install -requeriments.txt
+script:
+  - pytest --cov=com.faculdadeimpacta com/faculdadeimpacta.calculadora/test/
